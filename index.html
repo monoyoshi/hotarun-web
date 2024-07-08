@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="../global-assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="https://cdn.bladewyrm.dev/global/images/favicon.png">
     <title>hotaru(n) | bladewyrm.dev</title>
 
     <!-- stylesheets -->
@@ -11,31 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../global-assets/css/colors.css">
-    <link rel="stylesheet" href="../global-assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/colors.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/fonts.css">
 
-    <link rel="stylesheet" href="../global-assets/css/style.css">
-    <link rel="stylesheet" href="../global-assets/css/dust.css">
-    <link rel="stylesheet" href="../global-assets/css/cursor.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/dust.css">
+    <link rel="stylesheet" href="https://cdn.bladewyrm.dev/global/css/cursor.css">
 
     <!-- scripts -->
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="../global-assets/javascript/boilerplate.js"></script>
-    <script src="../global-assets/javascript/dust.js"></script>
-    <script src="../global-assets/javascript/cursor.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/boilerplate.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/dust.js"></script>
+    <script src="https://cdn.bladewyrm.dev/global/javascript/cursor.js"></script>
 
     <!-- local -->
-    <script src="../javascript/agecalc.js"></script>
-    <script src="../javascript/timecalc.js"></script>
+    <script src="https://bladewyrm.dev/javascript/agecalc.js"></script>
+    <script src="https://bladewyrm.dev/javascript/timecalc.js"></script>
 
     <script>
         // insert header and footer
         // calculate age, current time on load
         $(document).ready(function () {
-            header(2);
-            footer(2);
+            header();
+            footer();
 
             $("#age").text(ageCalc("11/17/2016"));
             setInterval(() => $("#currenttime").text(`Current time: ${currentUTCTime()}`), 1); // update every millisecond
@@ -49,15 +49,15 @@
 
     <header></header>
 
-    <article>
+    <main>
         <div class="flexbox">
             <div class="frame" style="width: 40%; margin: 0;">
-                <img src="assets/profilepicture.png" alt="hotaru(n)'s first profile picture" style="margin: 0;">
+                <img src="images/profilepicture.png" alt="hotaru(n)'s first profile picture" style="margin: 0;">
             </div>
             <div class="flexbox center" style="width: 60%;">
                 <div style="width: 65%;">
                     <div class="textbox">
-                        <div class="h2">Touken Robot</div>
+                        <div class="h2">Touken Robo</div>
                         <div class="h1">hotaru(n)</div>
                         <div class="quote">"hahahahaha"</div>
                         <p>
@@ -82,7 +82,7 @@
                         <tr><td><br></td></tr>
                         <tr>
                             <th>Species</th>
-                            <td>Discord Bot</td>
+                            <td>Discord Bot (Javascript)</td>
                         </tr>
                         <tr>
                             <th>Pronouns</th>
@@ -94,7 +94,7 @@
                         </tr>
                         <tr>
                             <th>Residence</th>
-                            <td>Your Wi-Fi</td>
+                            <td>kyu(ren)'s Raspberry Pi 5 "Pi-kun"</td>
                         </tr>
                         <th>Timezone</th>
                         <td>
@@ -145,10 +145,10 @@
         <div class="textbox">
             <p>
                 <b>hotaru(n)</b> is a Discord bot that does...funny things. He is written with Javascript (Node.js)
-                and uses Discord.js to interact with the Discord API.
+                and uses <code>Discord.js</code> to interact with the Discord API.
             </p>
             <p>
-                He is created and maintained by <a href="../../about.html">yours truly</a> (also <b>@kyu_rem_</b> on
+                He is created and maintained by <a href="https://bladewyrm.dev/profile.html">yours truly</a> (also <b>@kyu_rem_</b> on
                 Discord). He started as an after-school pastime they made out of curiosity. Years later, lots of things
                 happened, and he's like this now. At least he's funny and sometimes useful...?
             </p>
@@ -171,9 +171,10 @@
                 <li>The inability to crash.</li>
                 <li>A time-keeping system.</li>
                 <li>Functions to make him seem alive, and also more annoying.</li>
+                <li>Functions to disable the fact that he seems alive, just in case he is too annoying.</li>
             </ul>
         </div>
-    </article>
+    </main>
 
     <footer></footer>
 
